@@ -43,7 +43,7 @@ const show = {
 const fire = (event) => {
     if (event.offsetX >= 0 && event.offsetX <= 30 && event.offsetY >= 0 && event.offsetY <= 30) {
         const target = event.target;
-        if (target.className.indexOf("miss") == -1) {
+        if (target.className.length == 0) {
             show.miss(target);
             play.updateData = "shot";
         }
