@@ -106,6 +106,8 @@ const init = () => {
     play.hit = 0;
     play.dead = 0;
     play.render();
+    spans.header.textContent = "SEA BATTLE";
+    spans.header.style.color = "black";
     game.ships = [];
     game.collision = new Set();
     game.generateShip();
